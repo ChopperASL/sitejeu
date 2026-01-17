@@ -43,7 +43,7 @@ nav a {
   justify-content: center;
 }
 
-/* css slider */
+/* css du slider */
 
 /* Slideshow container */
 .slideshow-container {
@@ -141,6 +141,7 @@ nav a {
   to {opacity: 1}
 }
 
+/*Css des boutons principaux (à changer)*/
 
 .bouton {
   padding: 12px 20px;
@@ -177,6 +178,69 @@ nav a {
   justify-content: center;
   gap: 20px;
 }
+
+/* Css des 3 cartes info*/
+
+.container-cardinfo {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.cardinfo {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.cardinfo-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.cardinfo:hover .cardinfo-inner {
+  transform: rotateY(180deg);
+}
+
+.cardinfo-front,
+.cardinfo-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardinfo-front {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.cardinfo-back {
+  background-color: #00bbff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #00bbff;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
 
 /* Three columns side by side */
 .column {
