@@ -1,19 +1,21 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #000;
+  font-family: 'Georgia', serif;
+  background: #D6CFC4;
+  color: #0F0D0C;
 }
 
 header, footer {
   padding: 20px 40px;
-  border-bottom: 1px solid #eee;
+  background-color: #3A2F2A;
+  border-bottom: 2px solid #9C8A5D;
 }
 
 footer {
-  border-top: 1px solid #eee;
+  border-top: 4px solid #9C8A5D;
   border-bottom: none;
   font-size: 14px;
+  background-color: #0F0D0C;
 }
 
 nav {
@@ -24,124 +26,11 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #D6CFC4;
   margin-left: 20px;
 }
 
-.content-wrapper {
-  display: flex;
-  gap: 40px;
-  padding: 20px 40px;
-  align-items: stretch;
-  min-height: 500px;
-}
-
-.slideshow-wrapper {
-  flex: 0 0 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* css slider */
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  width: 100%;
-  @media screen {
-    max-width: 500px;
-    margin: auto;
-  }
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  z-index: 10;
-}
-
-/* Position the "prev button" to the left */
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.dots-container {
-  text-align: center;
-  margin-top: 15px;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/*Css des boutons principaux (à changer)*/
+/*css boutons*/
 
 .bouton {
   padding: 12px 20px;
@@ -154,12 +43,18 @@ nav a {
 }
 
 .bouton-dark {
-  background: #222;
-  color: #fff;
+  background: #3E4F47;
+  color: #D6CFC4;
+  border: 1px solid #3E4F47;
+}
+
+.bouton-dark:hover {
+  background: #6B4A3A;
+  border-color: #9C8A5D;
 }
 
 .bouton-red {
-  background: #e52525;
+  background: #6B4A3A;
   color: #fff;
 }
 
@@ -179,60 +74,6 @@ nav a {
   gap: 20px;
 }
 
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 30%;
-  margin-bottom: 17px;
-  padding: 0 24px;
-  padding-top: 80px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button-team {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button-team:hover {
-  background-color: #555;
-}
-
 /* css de l'image du logo.jpg */
 
 .logo {
@@ -243,45 +84,134 @@ nav a {
 /*css du footer */
 
 .footer {
-  border-top: 1px solid #eee;
-  padding: 40px;
-  font-size: 14px;
-  clear: right;
+  background-color: #0F0D0C;
+  position: relative;
+  padding-top: 80px;
+  margin-top: 100px;
+  clear: both;
+}
+
+.footer-cta {
+  background-color: #3A2F2A;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #9C8A5D; /* Or */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cta-text h2 {
+  color: #D6CFC4;
+  margin: 0;
+  font-size: 24px;
+}
+
+.cta-text p {
+  color: #9C8A5D; 
+  margin: 5px 0 0 0;
+}
+
+.bouton-cta {
+  background-color: #0F0D0C;
+  color: #D6CFC4;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #9C8A5D;
+  transition: 0.3s;
+}
+
+.bouton-cta:hover {
+  background-color: #9C8A5D;
+  color: #0F0D0C;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: space-around;
+  padding: 60px 40px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.footer-brand p {
+  color: #D6CFC4;
+  margin-top: 15px;
+  opacity: 0.6;
 }
 
-.socials {
-  display: flex;
-  gap: 12px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: #000;
+.footer-column h4, .footer-social h4 {
+  color: #9C8A5D; 
+  text-transform: uppercase;
   font-size: 14px;
-}
-
-.footer-column h4 {
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .footer-column a {
   display: block;
+  color: #D6CFC4;
   text-decoration: none;
-  color: #000;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
+.footer-column a:hover {
+  color: #3E4F47;
+  padding-left: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  background-color: #3E4F47; 
+  width: 40px;
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icon img {
+  width: 35px; 
+  height: 35px;
+  object-fit: contain;
+}
+
+.icon:hover {
+  background-color: #9C8A5D; 
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-cta {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
