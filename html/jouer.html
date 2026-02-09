@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Télécharger l'application</title>
+  <title>Apprendre - Aeon</title>
   <link rel="stylesheet" href="../css/jouer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="../images/logo.jpg">
 </head>
-<body>
+<body class="site-container">
 
 <header>
   <nav>
@@ -16,24 +18,19 @@
   </nav>
 </header>
 
-<div class="main">
-  <a href="#" class="bouton bouton-red">Télécharger l'application</a>
-</div>
+<main class="content-area">
+  <div class="download-section">
+    <p class="instruction-text">Voici l'application mobile que vous pouvez télécharger juste ci-dessous.</p>
+    <a href="../documents/regles_aeon.pdf" class="bouton-premium" download>
+      <i class="fa-solid fa-mobile-screen-button icon-dl"></i> Télécharger l'application
+    </a>
+  </div>
+</main>
 
 <footer class="footer">
-  <div class="footer-cta">
-    <div class="cta-content">
-      <div class="cta-text">
-        <h2>Envie d'aider le projet ?</h2>
-        <p>Faîtes des dons à notre tipee !</p>
-      </div>
-      <a href="https://fr.tipeee.com/" class="bouton-cta" target="_blank">Faire un don</a>
-    </div>
-  </div>
-
   <div class="footer-container">
     <div class="footer-brand">
-      <img src="../images/logo.jpg" alt="logo" class="logo"/>
+      <h1><a href="/html/index.html"><img src="../images/logo.jpg" alt="logo" class="logo"/></a></h1>
       <p>© 2026 Aeon</p>
     </div>
 
@@ -52,20 +49,20 @@
 
     <div class="footer-column">
       <h4>Resources</h4>
-      <a href="#">Règles</a>
-      <a href="#">Mentions Légales</a>
+      <a href="apprendre.html">Règles</a>
+      <a href="../html/mentions-legales.html" target="_blank">Mentions Légales</a>
     </div>
 
     <div class="footer-social">
       <h4>Suivez-nous</h4>
       <div class="social-icons">
         <a href="https://www.instagram.com/" class="icon">
-        <img src="../images/instagram.svg" alt="instagram">
+          <img src="../images/instagram.svg" alt="instagram">
         </a>
       </div>
     </div>
   </div>
 </footer>
-<script src="../js/slider.js"></script>
+
 </body>
 </html>

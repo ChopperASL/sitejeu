@@ -1,5 +1,12 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Georgia', serif;
   background: #D6CFC4;
   color: #0F0D0C;
@@ -30,8 +37,25 @@ nav a {
   margin-left: 20px;
 }
 
-/*css boutons*/
+.content-area {
+  flex: 1; /* espace pour le footer*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
 
+.download-section {
+  text-align: center;
+}
+
+.instruction-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/*boutons*/
 .bouton {
   padding: 12px 20px;
   border-radius: 8px;
@@ -40,6 +64,7 @@ nav a {
   font-size: 16px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .bouton-dark {
@@ -53,41 +78,53 @@ nav a {
   border-color: #9C8A5D;
 }
 
-.bouton-red {
-  background: #6B4A3A;
-  color: #fff;
+/* download */
+.bouton-premium {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #6B4A3A;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50px; /*bords arrondis */
+  border: 2px solid #9C8A5D;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.main {
-  flex: 0 0 45%;
-  padding: 40px 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.bouton-premium:hover {
+  background-color: #3E4F47;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: #D6CFC4;
 }
 
-.boutons {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.icon-dl {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #9C8A5D;
+  transition: 0.3s;
 }
 
-/* css de l'image du logo.jpg */
-
+.bouton-premium:hover .icon-dl {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+/*logo*/
 .logo {
   height: 50px;
   width: 50px;
 }
 
-/*css du footer */
-
+/* footer*/
 .footer {
   background-color: #0F0D0C;
   position: relative;
   padding-top: 80px;
-  margin-top: 100px;
+  margin-top: 80px;
   clear: both;
 }
 
@@ -98,13 +135,15 @@ nav a {
   padding: 30px 50px;
   position: absolute;
   top: -60px;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #9C8A5D; /* Or */
+  border-bottom: 3px solid #9C8A5D;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-sizing: border-box;
 }
 
 .cta-content {
@@ -203,9 +242,9 @@ nav a {
   transform: translateY(-3px);
 }
 
+/* reponsive */
 @media screen and (max-width: 768px) {
   .footer-cta {
-    width: 90%;
     padding: 20px;
     flex-direction: column;
     text-align: center;
