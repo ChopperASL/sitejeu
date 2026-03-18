@@ -1,14 +1,14 @@
 @font-face {
   font-family: "josefin-slab";
   src:
-    url("../font/Josefin_Slab/JosefinSlab-Italic.ttf") format("ttf"),
+    url("../font/Josefin_Slab/JosefinSlab-MediumItalic.ttf") format("ttf"),
     url("../font/Josefin_Slab/JosefinSlab-Medium.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "josefin-sans";
   src:
-    url("../font/Josefin_Sans/JosefinSans-Italic.ttf") format("ttf"),
+    url("../font/Josefin_Sans/JosefinSans-MediumItalic.ttf") format("ttf"),
     url("../font/Josefin_Sans/JosefinSans-Medium.ttf") format("ttf");
 }
 
