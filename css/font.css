@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "josefin-slab";
+  src:
+    url("../font/Josefin_Slab/JosefinSlab-Italic.ttf") format("ttf"),
+    url("../font/Josefin_Slab/JosefinSlab-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "josefin-sans";
+  src:
+    url("../font/Josefin_Sans/JosefinSans-Italic.ttf") format("ttf"),
+    url("../font/Josefin_Sans/JosefinSans-Medium.ttf") format("ttf");
+}
+
+* {
+  font-family: "josefin-sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "josefin-slab", serif;
+}
