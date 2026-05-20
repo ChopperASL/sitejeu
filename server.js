@@ -11,7 +11,7 @@ app.use('/font', express.static(path.join(__dirname, 'font')));
 app.use('/documents', express.static(path.join(__dirname, 'documents')));
 
 // routes vers chaque page HTML
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'html', 'index.html')));
+app.get('/index.html', (req, res) => res.sendFile(path.join(__dirname, 'html', 'index.html')));
 app.get('/apprendre.html', (req, res) => res.sendFile(path.join(__dirname, 'html', 'apprendre.html')));
 app.get('/jouer.html', (req, res) => res.sendFile(path.join(__dirname, 'html', 'jouer.html')));
 app.get('/mentions-legales.html', (req, res) => res.sendFile(path.join(__dirname, 'html', 'mentions-legales.html')));
